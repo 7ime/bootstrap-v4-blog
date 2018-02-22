@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Time</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="main">
+
+  <nav class="navbar navbar-expand-lg main-menu main-menu_theme_light">
+    <a class="navbar-brand" href="#"><img src="img/logo-main.png" alt=""></a>
+    <div class="main-menu__logreg">
+      <button type="button" class="main-menu__button-logreg button button_logreg_one" data-toggle="modal" data-target="#RegistrationForm">
+        <i class="fa fa-user button__icon-left"></i>Sign Up
+      </button>
+      <button type="button" class="main-menu__button-logreg button button_logreg_two" data-toggle="modal" data-target="#LoginForm">
+        <i class="fa fa-sign-in button__icon-left"></i>Log In
+      </button>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+      <ul class="navbar-nav">
+          <li class="nav-item is-active"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Example</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Example</a></li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Submenu level 1</a></li>
+                  <li><a class="dropdown-item" href="#">Submenu level 1</a></li>
+                  <li><a class="dropdown-item" href="#">Submenu level 1</a></li>
+                  <li>
+                    <a class="dropdown-item dropdown-toggle" href="#">Submenu level 2</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Submenu level 2</a></li>
+                          <li><a class="dropdown-item" href="#">Submenu level 2</a></li>
+                          <li><a class="dropdown-item" href="#">Submenu level 2</a></li>
+                          <li><a class="dropdown-item dropdown-item-last" href="#">Submenu level 2</a></li>
+                      </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Submenu level 1</a></li>
+                  <li><a class="dropdown-item" href="#">Submenu level 1</a></li>
+                  <li>
+                    <a class="dropdown-item dropdown-item-last dropdown-toggle" href="#">Submenu level 2</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Submenu level 2</a></li>
+                          <li><a class="dropdown-item" href="#">Submenu level 2</a></li>
+                          <li><a class="dropdown-item" href="#">Submenu level 2</a></li>
+                          <li><a class="dropdown-item" href="#">Submenu level 2</a></li>
+                          <li><a class="dropdown-item" href="#">Submenu level 2</a></li>
+                          <li><a class="dropdown-item" href="#">Submenu level 2</a></li>
+                          <li><a class="dropdown-item dropdown-item-last" href="#">Submenu level 2</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#">Contacts</a></li>
+      </ul>
+      
+    </div>
+  </nav>
+
+	<div class="modal fade" id="RegistrationForm" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+
+
+	 		<div class="modal-window">
+	 			<div class="modal-window-close">
+		 			<button type="button" class="modal-window-close__button-top button button_close" data-dismiss="modal" aria-label="Close">
+		 			  <span aria-hidden="true"><i class="fa fa-window-close"></i></span>
+		 			</button>
+	 			</div>
+	 			<div class="logreg-panel modal-window__logreg-panel">
+	 				<div class="logreg-panel__container">
+		 				<h4 class="logreg-panel__title">Registration</h4>
+			 			<form id="sign-up" action="#" class="logreg-form logreg-panel__logreg-form">
+
+			 				<label for="sign-up-name" class="logreg-form__label">Username</label>
+			 				<input type="text" class="logreg-form__input input-text input-text_bdrs" id="sign-up-name" required placeholder="John344">
+
+			 				<label for="sign-up-email" class="logreg-form__label">E-mail</label>
+			 				<input type="email" class="logreg-form__input input-text input-text_bdrs" id="sign-up-email" required placeholder="info@example.com">
+
+			 				<label for="sign-up-password" class="logreg-form__label">Password</label>
+			 				<input type="password" class="logreg-form__input input-text input-text_bdrs" id="sign-up-password" required placeholder="*************">
+
+			 				<label for="sign-up-password-repeat" class="logreg-form__label">Repeat password</label>
+			 				<input type="password" class="logreg-form__input input-text input-text_bdrs" id="sign-up-password-repeat" required placeholder="*************">
+
+			 				<input type="submit" value="Sign me up" class="logreg-form__button button button_logreg_one">
+			 				<input type="reset" value="Clean" class="logreg-form__button button button_reset">
+
+			 			</form>
+					</div><!-- //logreg-panel__box -->
+					<div class="logreg-panel__divider-text">OR</div>
+					<div class="logreg-panel__divider-line"></div>
+					<div class="logreg-panel__container">
+						<h4 class="logreg-panel__title">Sign in with social network</h4>
+			 			<div class="logreg-social logreg-panel__logreg-social">
+			 				<button type="button" class="logreg-social__button button button_facebook">Log in with Facebook</button>
+			 				<button type="button" class="logreg-social__button button button_twitter">Log in with Twitter</button>
+			 				<button type="button" class="logreg-social__button button button_google">Log in with Google+</button>
+			 			</div>
+		 			</div><!-- //logreg-panel__box -->
+				</div>
+				<div class="modal-window-close">
+		 			<button type="button" class="modal-window-close__button-bottom button button_close" data-dismiss="modal" aria-label="Close">
+		 			  <span aria-hidden="true">Close</span>
+		 			</button>
+	 			</div>
+	 		</div><!--//modal-->
+
+
+	  </div>
+	</div>
+
+	<div class="modal fade" id="LoginForm" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+
+
+	 		<div class="modal-window">
+	 			<div class="modal-window-close">
+		 			<button type="button" class="modal-window-close__button-top button button_close" data-dismiss="modal" aria-label="Close">
+		 			  <span aria-hidden="true"><i class="fa fa-window-close"></i></span>
+		 			</button>
+	 			</div>
+	 			<div class="logreg-panel modal-window__logreg-panel">
+	 				<div class="logreg-panel__container">
+		 				<h4 class="logreg-panel__title">Login</h4>
+			 			<form id="log-in" action="#" class="logreg-form logreg-panel__logreg-form">
+
+			 				<label for="log-in-name" class="logreg-form__label">Username</label>
+			 				<input type="text" class="logreg-form__input input-text input-text_bdrs" id="log-in-name" required placeholder="John344">
+
+			 				<label for="log-in-password" class="logreg-form__label">Password</label>
+			 				<input type="password" class="logreg-form__input input-text input-text_bdrs" id="log-in-password" required placeholder="*************">
+
+			 				<label class="checkbox logreg-form__checkbox">
+		 				    <input class="checkbox__input" type="checkbox" name="log-in-checkbox" checked>
+		 				    <span class="checkbox__custom checkbox__custom_type_common"></span>
+		 				    <span class="checkbox__text">Remember me</span>
+			 				</label>
+
+			 				<p class="logreg-form__text">Forget your password? Click <a href="#" class="logreg-form__link">here</a> to reset your password</p>
+
+			 				<input type="submit" value="Log in" class="logreg-form__button button button_logreg_one">
+			 				<input type="reset" value="Clean" class="logreg-form__button button button_reset">
+
+
+			 			</form>
+					</div><!-- //logreg-panel__box -->
+					<div class="logreg-panel__divider-text">OR</div>
+					<div class="logreg-panel__divider-line"></div>
+					<div class="logreg-panel__container">
+						<h4 class="logreg-panel__title">Sign in with social network</h4>
+			 			<div class="logreg-social logreg-panel__logreg-social">
+			 				<button type="button" class="logreg-social__button button button_facebook">Log in with Facebook</button>
+			 				<button type="button" class="logreg-social__button button button_twitter">Log in with Twitter</button>
+			 				<button type="button" class="logreg-social__button button button_google">Log in with Google+</button>
+			 			</div>
+		 			</div><!-- //logreg-panel__box -->
+				</div>
+				<div class="modal-window-close">
+		 			<button type="button" class="modal-window-close__button-bottom button button_close" data-dismiss="modal" aria-label="Close">
+		 			  <span aria-hidden="true">Close</span>
+		 			</button>
+	 			</div>
+	 		</div><!--//modal-->
+
+
+	  </div>
+	</div>
+	<div class="modal fade" id="Newsletter" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+
+	 		<div class="modal-window">
+
+	 			<div class="modal-window-close">
+		 			<button type="button" class="modal-window-close__button-top button button_close" data-dismiss="modal" aria-label="Close">
+		 			  <span aria-hidden="true"><i class="fa fa-window-close"></i></span>
+		 			</button>
+	 			</div>
+
+	 			<div class="newsletter modal-window__newsletter">
+
+	 				<span class="newsletter__icon fa fa-envelope"></span>
+	 				<h4 class="newsletter__title">Newsletter</h4>
+	 				<p class="newsletter__text">Enter your email address to subscribe our notification of our new post & features by email.</p>
+
+	 				<form action="#" class="newsletter__form">
+	 					<input type="email" class="newsletter__input input-text" required placeholder="Your Email">
+	 					<input type="submit" class="newsletter__submit input-submit" value="Subscribe">
+	 				</form>				
+
+	 			</div>
+
+	 			<label class="checkbox modal-window__checkbox">
+	 			  <input class="checkbox__input" type="checkbox" name="dont-show">
+	 			  <span class="checkbox__custom checkbox__custom_type_common"></span>
+	 			  <span class="checkbox__text">Don't show again</span>
+	 			</label>
+				
+	 		</div><!--//modal-->
+
+	  </div>
+	</div>
+	<header class="main-header main__main-header">
+
+		<div class="header-content main-header__header-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-12">
+
+						<h1 class="header-content__title">Hello world and another information</h1>
+						<p class="header-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officia est id amet, architecto tempora vero mollitia minus accusantium consectetur.</p>
+						<strong class="header-content__secondary-title">Lorem ipsum dolor sit amet, consectetur adipisicing.</strong>
+						<p class="header-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis qui itaque necessitatibus ullam tempora, accusamus labore, quia iusto, dicta numquam minima. Deserunt distinctio magnam impedit quisquam quas accusamus repudiandae. Tenetur nisi quae ut, a suscipit nostrum voluptatibus ipsum blanditiis. Explicabo autem minima neque aperiam voluptates nemo doloribus ut perferendis voluptas? Et molestias sequi laudantium perspiciatis animi sapiente quia architecto autem voluptas excepturi voluptate nostrum</p>
+						<div class="header-content__button-group">
+							<a href="#" class="header-content__button button button_common_one">Get Started</a>
+							<a href="#" class="header-content__button button button_common_two">Info</a>
+						</div>
+						<p class="header-content__additional-text">Lorem ipsum dolor sit amet, consectetur adipisicing <a href="#" class="header-content__link">click here</a> elit. Eaque, perferendis!</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="social-panel header-main__social-panel">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-2">
+						<a href="#" class="social-panel__link social-panel__link_first"><i class="fa fa-vk"></i></a>
+					</div>
+					<div class="col-2">
+						<a href="#" class="social-panel__link"><i class="fa fa-facebook"></i></a>
+					</div>
+					<div class="col-2">
+						<a href="#" class="social-panel__link"><i class="fa fa-twitter"></i></a>
+					</div>
+					<div class="col-2">
+						<a href="#" class="social-panel__link"><i class="fa fa-instagram"></i></a>
+					</div>
+					<div class="col-2">
+						<a href="#" class="social-panel__link"><i class="fa fa-youtube"></i></a>
+					</div>
+					<div class="col-2">
+						<a href="#" class="social-panel__link"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+	</header>
+
+	<div class="container">
+		<div class="main-container">
+			<section class="page-block main-conteiner__page-block m-top-30">
+				<h2 class="title-h2 page-block__title"><span class="title-h2__part_first">Most</span> Popular</h2>				
+				<div class="tile-grid page-block__tile-grid">
+
+					<div class="tile-grid__col tile-grid__col_same">
+						
+						<article class="entry-img-bg tile-grid__entry-img-bg entry-img-bg__margin_small">
+							<a href="#" class="entry-img-bg__link-wrap">
+								<div class="entry-img-bg__content entry-img-bg__content_bottom" style="background-image: url('img/most-popular-1.jpg')">
+									<h3 class="entry-img-bg__title">Beauty Treatments Worth Traveling For...</h3>
+									<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+								</div>
+							</a>
+							<a href="#" class="entry-img-bg__button button button_news_one">Travel tips</a>
+						</article>
+
+					</div><!-- col-same -->
+
+					<div class="tile-grid__col tile-grid__col_same">
+						<div class="tile-grid__group-items">
+
+							<article class="entry-img-bg tile-grid__entry-img-bg entry-img-bg__margin_small">
+								<a href="#" class="entry-img-bg__link-wrap">
+									<div class="entry-img-bg__content entry-img-bg__content_bottom" style="background-image: url('img/most-popular-2.jpg')">
+										<h3 class="entry-img-bg__title">Beauty Treatments Worth Traveling For...</h3>
+										<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+									</div>
+								</a>
+								<a href="#" class="entry-img-bg__button button button_news_one">Travel tips</a>
+							</article>
+							
+						</div><!-- //group-items -->
+						<div class="tile-grid__group-items">
+														
+							<article class="entry-img-bg tile-grid__entry-img-bg entry-img-bg__margin_small">
+								<a href="#" class="entry-img-bg__link-wrap">
+									<div class="entry-img-bg__content entry-img-bg__content_bottom" style="background-image: url('img/most-popular-3.jpg')">
+										<h3 class="entry-img-bg__title">21 Amazing hidden places...</h3>
+										<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+									</div>
+								</a>
+								<a href="#" class="entry-img-bg__button button button_news_one">Travel tips</a>
+							</article>
+
+							<article class="entry-img-bg tile-grid__entry-img-bg entry-img-bg__margin_small">
+								<a href="#" class="entry-img-bg__link-wrap">
+									<div class="entry-img-bg__content entry-img-bg__content_bottom" style="background-image: url('img/most-popular-4.jpg')">
+										<h3 class="entry-img-bg__title">21 Amazing hidden places...</h3>
+										<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+									</div>
+								</a>
+								<a href="#" class="entry-img-bg__button button button_news_one">Travel tips</a>
+							</article>
+							
+						</div><!-- //group-items -->
+					</div><!-- col-same -->
+				</div>
+			</section>
+			<div class="row">
+				<div class="col-md-8">
+					<main class="main-content">
+						<section class="page-block main-content__page-block m-top-30">
+							<h2 class="title-h2 page-block__title"><span class="title-h2__part_first">Latest</span> News</h2>
+							<div class="tile-grid page-block__tile-grid">
+								<div class="tile-grid__col tile-grid__col_same">
+																				
+									<article class="entry-img-bg tile-grid__entry-img-bg">
+										<a href="#" class="entry-img-bg__link-wrap">
+											<div class="entry-img-bg__content entry-img-bg__content_bottom" style="background-image: url('img/most-popular-2.jpg')">
+												<h3 class="entry-img-bg__title">21 Amazing hidden places...</h3>
+												<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+											</div>
+										</a>
+										<a href="#" class="entry-img-bg__button button button_news_one">Fashion</a>
+									</article>
+										
+									<!-- <div class="m-top-5"></div> -->
+
+									<article class="entry-img-bg entry-img-bg__margin_middle">
+										<a href="#" class="entry-img-bg__link-wrap">
+											<div class="entry-img-bg__content entry-img-bg__content_bottom" style="background-image: url('img/most-popular-6.jpg')">
+												<h3 class="entry-img-bg__title">Beauty Treatments Worth Traveling For...</h3>
+												<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+											</div>
+										</a>
+										<a href="#" class="entry-img-bg__button button button_news_one">Fashion</a>
+									</article>
+
+								</div>
+								<div class="tile-grid__col tile-grid__col_same">
+											
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content entry-img-left__content_margin_left">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-4.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content entry-img-left__content_margin_left">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-3.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content entry-img-left__content_margin_left">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-2.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content entry-img-left__content_margin_left">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-1.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content entry-img-left__content_margin_left">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-5.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content entry-img-left__content_margin_left">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-2.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content entry-img-left__content_margin_left entry-img-left__content__latest">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-1.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+											
+								</div>
+							</div>
+						</section>						
+						<section class="page-block main-content__page-block m-top-30">
+							<h2 class="title-h2 page-block__title"><span class="title-h2__part_first">Daily</span> News</h2>
+
+							<article class="entry-img-bg page-block__entry-img-bg m-bottom-30">
+								<a href="#" class="entry-img-bg__link-wrap">
+									<div class="entry-img-bg__content entry-img-bg__content_center" style="background-image: url('img/most-popular-5.jpg')">
+										<h3 class="entry-img-bg__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus voluptates illo aut explicabo, sint corrupti?</h3>
+										<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+									</div>
+								</a>
+								<a href="#" class="entry-img-bg__button button button_news_one">Sensation</a>
+							</article>
+
+							<div class="row">
+								<div class="col-md-6 col-12">
+
+									<article class="entry-img-top page-block__entry-img-top">
+										
+											<div class="entry-img-top__content">
+												<a href="#" class="entry-img-top__link-wrap">
+													<figure class="entry-img-top__img">
+														<img src="img/post-img-top-1.jpg" alt="">
+													</figure>
+													<h3 class="entry-img-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, velit!</h3>
+													<p class="entry-img-top__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iusto, earum, voluptatibus ipsam ipsum omnis autem praesentium dolore, fugiat nulla amet animi dolor cupiditate minus, quam repudiandae ut. Quaerat, a!</p>
+												</a>
+												<footer class="entry-img-top__footer">
+													<time datetime="2018-02-20T09:50+02:00" class="entry-img-top__time"><i class="fa fa-calendar entry-img-top__icon"></i>February 20,2018</time>
+													<a href="#" class="entry-img-top__link"><i class="fa fa-comments entry-img-top__icon"></i>10 comments</a>
+												</footer>
+											</div>
+										
+										<a href="#" class="entry-img-top__category button button_news_three">Interviews</a>
+									</article>
+
+								</div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-top page-block__entry-img-top">
+										
+											<div class="entry-img-top__content">
+												<a href="#" class="entry-img-top__link-wrap">
+													<figure class="entry-img-top__img">
+														<img src="img/post-img-top-2.jpg" alt="">
+													</figure>
+													<h3 class="entry-img-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, velit!</h3>
+													<p class="entry-img-top__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iusto, earum, voluptatibus ipsam ipsum omnis!</p>
+												</a>
+												<footer class="entry-img-top__footer">
+													<time datetime="2018-02-20T09:50+02:00" class="entry-img-top__time"><i class="fa fa-calendar entry-img-top__icon"></i>February 20,2018</time>
+													<a href="#" class="entry-img-top__link"><i class="fa fa-comments entry-img-top__icon"></i>10 comments</a>
+												</footer>
+											</div>
+										
+										<a href="#" class="entry-img-top__category button button_news_three">Interviews</a>
+									</article>
+
+								</div>
+								<div class="w-100"></div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-top page-block__entry-img-top">
+										
+											<div class="entry-img-top__content">
+												<a href="#" class="entry-img-top__link-wrap">
+													<figure class="entry-img-top__img">
+														<img src="img/post-img-top-3.jpg" alt="">
+													</figure>
+													<h3 class="entry-img-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, velit!</h3>
+													<p class="entry-img-top__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iusto, earum, voluptatibus ipsam ipsum omnis</p>
+												</a>
+												<footer class="entry-img-top__footer">
+													<time datetime="2018-02-20T09:50+02:00" class="entry-img-top__time"><i class="fa fa-calendar entry-img-top__icon"></i>February 20,2018</time>
+													<a href="#" class="entry-img-top__link"><i class="fa fa-comments entry-img-top__icon"></i>10 comments</a>
+												</footer>
+											</div>
+										
+										<a href="#" class="entry-img-top__category button button_news_three">Interviews</a>
+									</article>
+
+								</div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-top page-block__entry-img-top">
+										
+											<div class="entry-img-top__content">
+												<a href="#" class="entry-img-top__link-wrap">
+													<figure class="entry-img-top__img">
+														<img src="img/post-img-top-4.jpg" alt="">
+													</figure>
+													<h3 class="entry-img-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, velit!</h3>
+													<p class="entry-img-top__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iusto, earum, voluptatibus ipsam ipsum omnis autem praesentium dolore,</p>
+												</a>
+												<footer class="entry-img-top__footer">
+													<time datetime="2018-02-20T09:50+02:00" class="entry-img-top__time"><i class="fa fa-calendar entry-img-top__icon"></i>February 20,2018</time>
+													<a href="#" class="entry-img-top__link"><i class="fa fa-comments entry-img-top__icon"></i>10 comments</a>
+												</footer>
+											</div>
+										
+										<a href="#" class="entry-img-top__category button button_news_three">Interviews</a>
+									</article>
+
+								</div>
+								<div class="w-100"></div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-top page-block__entry-img-top">
+										
+											<div class="entry-img-top__content">
+												<a href="#" class="entry-img-top__link-wrap">
+													<figure class="entry-img-top__img">
+														<img src="img/post-img-top-5.jpg" alt="">
+													</figure>
+													<h3 class="entry-img-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, velit!</h3>
+													<p class="entry-img-top__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iusto, earum, voluptatibus ipsam ipsum omnis autem praesentium dolore, fugiat nulla amet animi dolor cupiditate minus, quam repudiandae ut. Quaerat, a!</p>
+												</a>
+												<footer class="entry-img-top__footer">
+													<time datetime="2018-02-20T09:50+02:00" class="entry-img-top__time"><i class="fa fa-calendar entry-img-top__icon"></i>February 20,2018</time>
+													<a href="#" class="entry-img-top__link"><i class="fa fa-comments entry-img-top__icon"></i>10 comments</a>
+												</footer>
+											</div>
+										
+										<a href="#" class="entry-img-top__category button button_news_three">Interviews</a>
+									</article>
+
+								</div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-top page-block__entry-img-top">
+										
+											<div class="entry-img-top__content">
+												<a href="#" class="entry-img-top__link-wrap">
+													<figure class="entry-img-top__img">
+														<img src="img/post-img-top-6.jpg" alt="">
+													</figure>
+													<h3 class="entry-img-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, velit!</h3>
+													<p class="entry-img-top__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iusto, earum, voluptatibus ipsam ipsum omnis</p>
+												</a>
+												<footer class="entry-img-top__footer">
+													<time datetime="2018-02-20T09:50+02:00" class="entry-img-top__time"><i class="fa fa-calendar entry-img-top__icon"></i>February 20,2018</time>
+													<a href="#" class="entry-img-top__link"><i class="fa fa-comments entry-img-top__icon"></i>10 comments</a>
+												</footer>
+											</div>
+										
+										<a href="#" class="entry-img-top__category button button_news_three">Interviews</a>
+									</article>
+
+								</div>
+							</div>
+						</section>						
+						<section class="page-block main-content__page-block">
+							<h2 class="title-h2 page-block__title"><span class="title-h2__part_first">Hot</span> Interviews</h2>				
+							<div class="tile-grid page-block__tile-grid">
+
+								<div class="tile-grid__col tile-grid__col_same">
+									
+									<article class="entry-img-bg tile-grid__entry-img-bg entry-img-bg__margin_small">
+										<a href="#" class="entry-img-bg__link-wrap">
+											<div class="entry-img-bg__content entry-img-bg__content_center" style="background-image: url('img/interview-1.jpg')">
+												<h3 class="entry-img-bg__title">Beauty Treatments Worth Traveling For...</h3>
+												<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+											</div>
+										</a>
+										<a href="#" class="entry-img-bg__button button button_news_two">Interviews</a>
+									</article>
+
+									<article class="entry-img-bg tile-grid__entry-img-bg entry-img-bg__margin_small">
+										<a href="#" class="entry-img-bg__link-wrap">
+											<div class="entry-img-bg__content entry-img-bg__content_center" style="background-image: url('img/interview-2.jpg')">
+												<h3 class="entry-img-bg__title">Beauty Treatments Worth Traveling For...</h3>
+												<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+											</div>
+										</a>
+										<a href="#" class="entry-img-bg__button button button_news_two">Interviews</a>
+									</article>
+
+								</div><!-- col-same -->
+
+								<div class="tile-grid__col tile-grid__col_same">
+									
+									<article class="entry-img-bg tile-grid__entry-img-bg entry-img-bg__margin_small">
+										<a href="#" class="entry-img-bg__link-wrap">
+											<div class="entry-img-bg__content entry-img-bg__content_center" style="background-image: url('img/interview-3.jpg')">
+												<h3 class="entry-img-bg__title">Lorem ipsum dolor sit amet....</h3>
+												<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+											</div>
+										</a>
+										<a href="#" class="entry-img-bg__button button button_news_two">Interviews</a>
+									</article>
+
+									<article class="entry-img-bg tile-grid__entry-img-bg entry-img-bg__margin_small">
+										<a href="#" class="entry-img-bg__link-wrap">
+											<div class="entry-img-bg__content entry-img-bg__content_center" style="background-image: url('img/interview-4.jpg')">
+												<h3 class="entry-img-bg__title">Lorem ipsum dolor sit amet....</h3>
+												<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+											</div>
+										</a>
+										<a href="#" class="entry-img-bg__button button button_news_two">Interviews</a>
+									</article>
+
+									<article class="entry-img-bg tile-grid__entry-img-bg entry-img-bg__margin_small">
+										<a href="#" class="entry-img-bg__link-wrap">
+											<div class="entry-img-bg__content entry-img-bg__content_center" style="background-image: url('img/interview-5.jpg')">
+												<h3 class="entry-img-bg__title">Lorem ipsum dolor sit amet....</h3>
+												<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+											</div>
+										</a>
+										<a href="#" class="entry-img-bg__button button button_news_two">Interviews</a>
+									</article>
+
+								</div><!-- col-same -->
+							</div>
+						</section>						
+						<section class="page-block main-content__page-block m-top-30">
+							<h2 class="title-h2 page-block__title"><span class="title-h2__part_first">Life</span> Style</h2>
+							<div class="row no-gutters">
+								<div class="col-md-6 col-12">
+
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-3.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+
+								</div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-4.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+
+								</div>
+								<div class="w-100"></div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-5.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+
+								</div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-1.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+
+								</div>
+								<div class="w-100"></div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-2.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+
+								</div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-3.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+
+								</div>
+								<div class="w-100"></div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-1.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+
+								</div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-left">
+										<a href="#" class="entry-img-left__link-wrap">
+											<div class="entry-img-left__content">
+												<figure class="entry-img-left__img">
+													<img src="img/interview-5.jpg" alt="">
+												</figure>
+												<div class="entry-img-left__text">
+													<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+												</div>
+											</div>
+										</a>
+									</article>
+									
+
+								</div>
+								
+							</div>
+						</section>						
+						<section class="page-block main-content__page-block m-top-30">
+							<h2 class="title-h2 page-block__title"><span class="title-h2__part_first">Featured</span> News</h2>
+
+							<article class="entry-img-bg entry-img-bg__margin_small page-block__entry-img-bg">
+								<a href="#" class="entry-img-bg__link-wrap">
+									<div class="entry-img-bg__content entry-img-bg__content_bottom" style="background-image: url('img/most-popular-3.jpg')">
+										<h3 class="entry-img-bg__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus voluptates illo aut explicabo, sint corrupti?</h3>
+										<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+									</div>
+								</a>
+								<a href="#" class="entry-img-bg__button button button_news_two">Sensation</a>
+							</article>
+
+							<div class="tile-grid page-block__tile-grid">
+								<div class="tile-grid__col tile-grid__col_same">
+																				
+									<article class="entry-img-bg entry-img-bg__margin_small tile-grid__entry-img-bg">
+										<a href="#" class="entry-img-bg__link-wrap">
+											<div class="entry-img-bg__content entry-img-bg__content_bottom" style="background-image: url('img/most-popular-2.jpg')">
+												<h3 class="entry-img-bg__title">21 Amazing hidden places...</h3>
+												<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+											</div>
+										</a>
+										<a href="#" class="entry-img-bg__button button button_news_two">Fashion</a>
+									</article>
+										
+								</div>
+								<div class="tile-grid__col tile-grid__col_same tile-grid__col_order">
+											
+									<article class="entry-img-bg entry-img-bg__margin_small tile-grid__entry-img-bg">
+										<a href="#" class="entry-img-bg__link-wrap">
+											<div class="entry-img-bg__content entry-img-bg__content_bottom" style="background-image: url('img/most-popular-4.jpg')">
+												<h3 class="entry-img-bg__title">21 Amazing hidden places...</h3>
+												<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+											</div>
+										</a>
+										<a href="#" class="entry-img-bg__button button button_news_two">Fashion</a>
+									</article>
+
+									<article class="entry-img-bg entry-img-bg__margin_small tile-grid__entry-img-bg">
+										<a href="#" class="entry-img-bg__link-wrap">
+											<div class="entry-img-bg__content entry-img-bg__content_bottom" style="background-image: url('img/most-popular-5.jpg')">
+												<h3 class="entry-img-bg__title">21 Amazing hidden places...</h3>
+												<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+											</div>
+										</a>
+										<a href="#" class="entry-img-bg__button button button_news_two">Fashion</a>
+									</article>
+											
+								</div>
+							</div>
+						</section>						
+						<section class="page-block main-content__page-block m-top-30">
+							<h2 class="title-h2 page-block__title"><span class="title-h2__part_first">Popular</span> Posts</h2>
+
+							<div class="row">
+								<div class="col-md-6 col-12">
+
+									<article class="entry-img-top page-block__entry-img-top">
+										
+											<div class="entry-img-top__content">
+												<a href="#" class="entry-img-top__link-wrap">
+													<figure class="entry-img-top__img">
+														<img src="img/post-img-top-1.jpg" alt="">
+													</figure>
+													<h3 class="entry-img-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, velit!</h3>
+													<p class="entry-img-top__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iusto, earum, voluptatibus ipsam ipsum omnis autem praesentium dolore, fugiat nulla amet animi dolor cupiditate minus, quam repudiandae ut. Quaerat, a!</p>
+												</a>
+												<footer class="entry-img-top__footer">
+													<time datetime="2018-02-20T09:50+02:00" class="entry-img-top__time"><i class="fa fa-calendar entry-img-top__icon"></i>February 20,2018</time>
+													<a href="#" class="entry-img-top__link"><i class="fa fa-comments entry-img-top__icon"></i>10 comments</a>
+												</footer>
+											</div>
+										
+										<a href="#" class="entry-img-top__category button button_news_three">Interviews</a>
+									</article>
+
+								</div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-top page-block__entry-img-top">
+										
+											<div class="entry-img-top__content">
+												<a href="#" class="entry-img-top__link-wrap">
+													<figure class="entry-img-top__img">
+														<img src="img/post-img-top-2.jpg" alt="">
+													</figure>
+													<h3 class="entry-img-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, velit!</h3>
+													<p class="entry-img-top__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iusto, earum, voluptatibus ipsam ipsum omnis!</p>
+												</a>
+												<footer class="entry-img-top__footer">
+													<time datetime="2018-02-20T09:50+02:00" class="entry-img-top__time"><i class="fa fa-calendar entry-img-top__icon"></i>February 20,2018</time>
+													<a href="#" class="entry-img-top__link"><i class="fa fa-comments entry-img-top__icon"></i>10 comments</a>
+												</footer>
+											</div>
+										
+										<a href="#" class="entry-img-top__category button button_news_three">Interviews</a>
+									</article>
+
+								</div>
+								<div class="w-100"></div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-top page-block__entry-img-top">
+										
+											<div class="entry-img-top__content">
+												<a href="#" class="entry-img-top__link-wrap">
+													<figure class="entry-img-top__img">
+														<img src="img/post-img-top-3.jpg" alt="">
+													</figure>
+													<h3 class="entry-img-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, velit!</h3>
+													<p class="entry-img-top__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iusto, earum, voluptatibus ipsam ipsum omnis</p>
+												</a>
+												<footer class="entry-img-top__footer">
+													<time datetime="2018-02-20T09:50+02:00" class="entry-img-top__time"><i class="fa fa-calendar entry-img-top__icon"></i>February 20,2018</time>
+													<a href="#" class="entry-img-top__link"><i class="fa fa-comments entry-img-top__icon"></i>10 comments</a>
+												</footer>
+											</div>
+										
+										<a href="#" class="entry-img-top__category button button_news_three">Interviews</a>
+									</article>
+
+								</div>
+								<div class="col-md-6 col-12">
+									
+									<article class="entry-img-top page-block__entry-img-top">
+										
+											<div class="entry-img-top__content">
+												<a href="#" class="entry-img-top__link-wrap">
+													<figure class="entry-img-top__img">
+														<img src="img/post-img-top-4.jpg" alt="">
+													</figure>
+													<h3 class="entry-img-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, velit!</h3>
+													<p class="entry-img-top__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iusto, earum, voluptatibus ipsam ipsum omnis autem praesentium dolore,</p>
+												</a>
+												<footer class="entry-img-top__footer">
+													<time datetime="2018-02-20T09:50+02:00" class="entry-img-top__time"><i class="fa fa-calendar entry-img-top__icon"></i>February 20,2018</time>
+													<a href="#" class="entry-img-top__link"><i class="fa fa-comments entry-img-top__icon"></i>10 comments</a>
+												</footer>
+											</div>
+										
+										<a href="#" class="entry-img-top__category button button_news_three">Interviews</a>
+									</article>
+
+								</div>
+								
+							</div>
+						</section>						
+					</main>
+				</div>
+				<div class="col-md-4">
+					<aside class="main-sidebar">
+						<nav class="categories main-sidebar__categories">
+							<h2 class="title-h2 categories__title-h2"><span class="title-h2__part_first">Cate</span>gories</h2>
+							<ul class="categories__list">
+								<li class="categories__item">
+									<a href="#" class="categories__link">Interviews</a><span class="categories__number">7</span>
+								</li>
+								<li class="categories__item">
+									<a href="#" class="categories__link">Fashion</a><span class="categories__number">2</span>
+								</li>
+								<li class="categories__item">
+									<a href="#" class="categories__link">Travel tips</a><span class="categories__number">10</span>
+								</li>
+								<li class="categories__item">
+									<a href="#" class="categories__link">Sensation</a><span class="categories__number">3</span>
+								</li>
+								<li class="categories__item">
+									<a href="#" class="categories__link">Lifestyle</a><span class="categories__number">15</span>
+								</li>
+								<li class="categories__item">
+									<a href="#" class="categories__link">Mountain</a><span class="categories__number">10</span>
+								</li>
+								<li class="categories__item">
+									<a href="#" class="categories__link">Extreme sport</a><span class="categories__number">18</span>
+								</li>
+								<li class="categories__item">
+									<a href="#" class="categories__link">Expedition</a><span class="categories__number">10</span>
+								</li>
+								<li class="categories__item">
+									<a href="#" class="categories__link">Culture</a><span class="categories__number">3</span>
+								</li>
+								<li class="categories__item">
+									<a href="#" class="categories__link">History</a><span class="categories__number">7</span>
+								</li>
+							</ul>
+						</nav>	
+						<article class="follow main-sidebar__follow">
+							<h3 class="follow__title">Follow Us</h3>
+
+							<nav class="social-network follow__social-network">
+								<ul class="social-network__list">
+									<li class="social-network__item"><a href="#" class="social-network__link social-network__link__small"><i class="fa fa-vk"></i></a></li>
+									<li class="social-network__item"><a href="#" class="social-network__link social-network__link__small"><i class="fa fa-facebook"></i></a></li>
+									<li class="social-network__item"><a href="#" class="social-network__link social-network__link__small"><i class="fa fa-twitter"></i></a></li>
+									<li class="social-network__item"><a href="#" class="social-network__link social-network__link__small"><i class="fa fa-instagram"></i></a></li>
+									<li class="social-network__item"><a href="#" class="social-network__link social-network__link__small"><i class="fa fa-youtube"></i></a></li>
+									<li class="social-network__item"><a href="#" class="social-network__link social-network__link__small"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</nav>
+
+							<div class="newsletter follow__newsletter">
+								<span class="newsletter__icon fa fa-envelope newsletter__icon_color_light"></span>
+								<h4 class="newsletter__title">Newsletter</h4>
+								<p class="newsletter__text">Enter your email address to subscribe our notification of our new post & features by email.</p>
+								
+								<form action="#" class="newsletter__form newsletter__form_column">
+									<input type="email" class="newsletter__input newsletter__input_text_center input-text" required placeholder="Your Email">
+									<input type="submit" class="newsletter__submit input-submit" value="Subscribe">
+								</form>				
+
+							</div>
+						</article>	
+						<nav class="tags main-sidebar__tags">
+							<h2 class="title-h2 tags__title-h2"><span class="title-h2__part_first">Tags</span> Cloud</h2>
+							<ul class="tags__list">
+								<li class="tags__item"><a href="#" class="tags__link">Montain</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">Olympiad</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">Entertainments</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">Family</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">Photo</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">Sea</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">Countryside</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">Asia</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">Ocean</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">Travel</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">Europe</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">America</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">Islands</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">Beach</a></li>
+								<li class="tags__item"><a href="#" class="tags__link">Sport</a></li>
+							</ul>
+						</nav>	
+						<section class="recent-post main-sidebar__recent-post">
+							<h2 class="title-h2 recent-post__title-h2"><span class="title-h2__part_first">Recent</span> Post</h2>
+							
+							<article class="entry-img-bg recent-post__entry-img-bg">
+								<a href="#" class="entry-img-bg__link-wrap">
+									<div class="entry-img-bg__content entry-img-bg__content_bottom" style="background-image: url('img/most-popular-5.jpg')">
+										<h3 class="entry-img-bg__title">Lorem ipsum dolor sit amet...</h3>
+										<time datetime="2018-02-19T15:34+02:00" class="entry-img-bg__time">February 19, 2018</time>
+									</div>
+								</a>
+								<a href="#" class="entry-img-bg__button button button_news_two">Sensation</a>
+							</article>
+
+							<article class="entry-img-left recent-post__entry-img-left">
+								<a href="#" class="entry-img-left__link-wrap">
+									<div class="entry-img-left__content">
+										<figure class="entry-img-left__img">
+											<img src="img/post-img-top-2.jpg" alt="">
+										</figure>
+										<div class="entry-img-left__text">
+											<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+											<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+										</div>
+									</div>
+								</a>
+							</article>
+
+							<article class="entry-img-left recent-post__entry-img-left">
+								<a href="#" class="entry-img-left__link-wrap">
+									<div class="entry-img-left__content">
+										<figure class="entry-img-left__img">
+											<img src="img/post-img-top-3.jpg" alt="">
+										</figure>
+										<div class="entry-img-left__text">
+											<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+											<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+										</div>
+									</div>
+								</a>
+							</article>
+
+							<article class="entry-img-left recent-post__entry-img-left">
+								<a href="#" class="entry-img-left__link-wrap">
+									<div class="entry-img-left__content">
+										<figure class="entry-img-left__img">
+											<img src="img/post-img-top-4.jpg" alt="">
+										</figure>
+										<div class="entry-img-left__text">
+											<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+											<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+										</div>
+									</div>
+								</a>
+							</article>
+
+							<article class="entry-img-left recent-post__entry-img-left">
+								<a href="#" class="entry-img-left__link-wrap">
+									<div class="entry-img-left__content">
+										<figure class="entry-img-left__img">
+											<img src="img/post-img-top-5.jpg" alt="">
+										</figure>
+										<div class="entry-img-left__text">
+											<h3 class="entry-img-left__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+											<time datetime="2018-02-20T17:12+02:00" class="entry-img-left__time">February 20, 2018</time>
+										</div>
+									</div>
+								</a>
+							</article>
+
+						</section>	
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="instagram main__instagram">
+		<div class="instagram__box">
+			<a href="#" class="instagram__link-wrap">
+				<span class="instagram__icon fa fa-instagram"></span>
+				<figure class="instagram__img">
+					<img src="img/instagram-1.jpg" alt="">
+				</figure>
+			</a>
+		</div>
+		<div class="instagram__box">
+			<a href="#" class="instagram__link-wrap">
+				<span class="instagram__icon fa fa-instagram"></span>
+				<figure class="instagram__img">
+					<img src="img/instagram-12.jpg" alt="">
+				</figure>
+			</a>
+		</div>
+		<div class="instagram__box">
+			<a href="#" class="instagram__link-wrap">
+				<span class="instagram__icon fa fa-instagram"></span>
+				<figure class="instagram__img">
+					<img src="img/instagram-11.jpg" alt="">
+				</figure>
+			</a>
+		</div>
+		<div class="instagram__box">
+			<a href="#" class="instagram__link-wrap">
+				<span class="instagram__icon fa fa-instagram"></span>
+				<figure class="instagram__img">
+					<img src="img/instagram-4.jpg" alt="">
+				</figure>
+			</a>
+		</div>
+		<div class="instagram__box">
+			<a href="#" class="instagram__link-wrap">
+				<span class="instagram__icon fa fa-instagram"></span>
+				<figure class="instagram__img">
+					<img src="img/instagram-9.jpg" alt="">
+				</figure>
+			</a>
+		</div>
+	</div>
+	<footer class="main-footer main__main-footer">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-7 col-ms-10 col-12">
+					<div class="newsletter main-footer__newsletter">
+						<span class="newsletter__icon fa fa-envelope"></span>
+						<h4 class="newsletter__title">Newsletter</h4>
+						<p class="newsletter__text">Enter your email address to subscribe our notification of our new post & features by email.</p>
+						<form action="#" class="newsletter__form">
+							<input type="email" class="newsletter__input newsletter__input_text_center input-text" required placeholder="Your Email">
+							<input type="submit" class="newsletter__submit input-submit" value="Subscribe">
+						</form>				
+					</div>
+
+					<nav class="social-network main-footer__social-network">
+						<ul class="social-network__list">
+							<li class="social-network__item"><a href="#" class="social-network__link"><i class="fa fa-vk"></i></a></li>
+							<li class="social-network__item"><a href="#" class="social-network__link"><i class="fa fa-facebook"></i></a></li>
+							<li class="social-network__item"><a href="#" class="social-network__link"><i class="fa fa-twitter"></i></a></li>
+							<li class="social-network__item"><a href="#" class="social-network__link"><i class="fa fa-instagram"></i></a></li>
+							<li class="social-network__item"><a href="#" class="social-network__link"><i class="fa fa-youtube"></i></a></li>
+							<li class="social-network__item"><a href="#" class="social-network__link"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</nav>
+
+					<small class="main-footer__legal-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem accusantium quas, fugit nesciunt ratione totam eveniet saepe tempora vel velit iusto earum. Placeat distinctio assumenda est enim, ut, nemo pariatur, suscipit doloribus reiciendis rerum fugiat nostrum obcaecati nesciunt voluptates illum.</small>
+
+
+				</div>
+			</div>
+		</div>
+		<p class="main-footer__copyright">All rights reserved <i class="fa fa-copyright"></i> 2018</p>
+	</footer>
+	<div class="scrollup">
+	  <i class="fa fa-chevron-up"></i>
+	</div>
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>
